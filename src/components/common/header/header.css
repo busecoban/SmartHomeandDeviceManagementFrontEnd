@@ -1,0 +1,160 @@
+header {
+    background-color: #fff; /* Light gray background */
+    height: 10vh;
+  box-shadow: 0 5px 30px rgb(0 22 84 / 10%);
+  padding: 15px 0;
+  position: sticky;
+  top: 0;
+  z-index: 99999;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header img {
+  width: 170px;
+  height: auto;
+}
+
+header a {
+  transition: color 0.5s, transform 0.3s;
+  font-weight: 500;
+  text-decoration: none;
+  color: #000;
+}
+
+header a:hover {
+  color: #27ae60;
+  transform: translateY(-2px);
+}
+
+header span {
+  width: auto;
+  padding: 0px 6px;
+  background: #27ae60;
+  border-radius: 50px;
+  color: #ffffff;
+  margin-right: 4px;
+  font-weight: 400;
+}
+
+header h4 {
+  font-weight: 500;
+  margin-right: 20px;
+}
+
+header .nav {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+}
+
+header .nav ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  justify-content: center;
+}
+
+header .nav li {
+  margin: 0 20px;
+}
+
+header .toggle {
+  display: none;
+}
+
+header .buttons {
+  display: flex;
+  align-items: center;
+}
+
+header .button {
+  margin-left: 10px;
+  margin-right: 20px;
+}
+
+header .btn1, .btn2 {
+  padding: 10px 20px;
+  font-size: 14px;
+  border: none;
+  border-radius: 14px;
+  background-color: #27ae60;
+  color: white;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  margin-left: 10px;
+  transition: background-color 0.3s;
+}
+
+header .btn1:hover, .btn2:hover {
+  background-color: #219150;
+}
+
+header .btn1 i, .btn2 i {
+  margin-right: 5px;
+}
+
+header .logo {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  flex-grow: 1;
+}
+
+header .logo img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 20px;
+}
+
+@media screen and (max-width: 768px) {
+  header {
+    padding: 0 15px;
+  }
+
+  header img {
+    margin-top: 0;
+  }
+
+  header .buttons {
+    display: none;
+  }
+
+  header .nav .flex {
+    display: none;
+  }
+
+  header .toggle {
+    display: block;
+    margin-top: 0;
+  }
+
+  header .small {
+    position: absolute;
+    top: 10vh;
+    left: 0;
+    width: 100%;
+    background-color: #27ae60;
+    padding: 20px;
+  }
+
+  header li {
+    margin: 20px 0;
+  }
+
+  header li a {
+    display: inline-block;
+    margin-bottom: 20px;
+    color: #fff;
+  }
+
+  header .logo img {
+    width: 80px;
+    height: 80px;
+  }
+}

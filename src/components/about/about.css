@@ -1,0 +1,65 @@
+.about {
+  padding: 60px 0;
+}
+
+.container {
+  display: flex;
+  justify-content: center; /* Center the container horizontally */
+}
+
+.mtop {
+  margin-top: 50px;
+}
+
+.about-content {
+  display: flex;
+  flex-direction: column; /* Arrange content in a column */
+  align-items: center; /* Center align items horizontally */
+}
+
+.circles-container {
+  display: flex;
+  flex-direction: column; /* Arrange circles in a column */
+  align-items: flex-start; /* Align items to the start of the container */
+  margin-left: -50px; /* Adjust margin to move container to the left */
+}
+
+.circle-item {
+  display: flex; /* Arrange image and text side by side */
+  flex-direction: row; /* Ensure horizontal alignment */
+  align-items: center; /* Center align items vertically */
+  margin: 20px 0; /* Add some margin for spacing */
+  padding: 20px; /* Add padding inside the item */
+  background: #f0f0f0; /* Background color for the rectangle */
+  border-radius: 10px; /* Rounded corners for the rectangle */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add subtle shadow for depth */
+  position: relative; /* Position relative to ensure proper layering */
+}
+
+.circle-image {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background-size: cover;
+  background-position: center;
+  margin-right: 20px; /* Margin to separate image from text */
+}
+
+.circle-text {
+  max-width: 500px; /* Adjust as needed for your layout */
+}
+
+.circle-text p {
+  margin: 5px 0; /* Add margin to separate paragraphs */
+  text-align: left; /* Align text to the left */
+}
+.circle-item {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.circle-item.expanded {
+  transform: scale(1.2);
+  z-index: 10;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}

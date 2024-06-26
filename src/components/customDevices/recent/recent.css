@@ -1,0 +1,131 @@
+.content.grid5.mtop {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.content.grid5.mtop .box {
+  margin: 15px;
+  width: 250px; /* Boyutu küçültüldü */
+  height: 270px; /* Boyutu küçültüldü */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-radius: 30px;
+  border: 2px solid black; /* Siyah kenarlık eklendi */
+  transition: transform 0.3s ease-in-out;
+}
+
+.content.grid5.mtop .box:hover {
+  transform: scale(1.1);
+}
+
+.content.grid5.mtop .box .button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.content.grid5.mtop .box .text {
+  font-size: 14px;
+  text-align: center;
+}
+
+.content.grid5.mtop .box .img img {
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-container {
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  width: 90%;
+}
+
+.form-container form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.form-container input {
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.form-container button {
+  width: 100%;
+  padding: 15px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-size: 16px;
+}
+
+.form-container button:hover {
+  background-color: #0056b3;
+}
+
+.form-container button.cancel {
+  background-color: #dc3545;
+}
+
+.form-container button.cancel:hover {
+  background-color: #bd2130;
+}
+
+.font {
+  background: linear-gradient(to right, #4733e1, #ffffff, #4733e1); /* Darker gradient from light blue to white to light blue */
+  padding: 20px; /* Add some padding for better spacing */
+  border-radius: 10px; /* Add border-radius for rounded corners */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional: Add a slight shadow for depth */
+}
+
+.heading-container {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.heading-container h2 {
+  font-size: 2.5rem; /* Adjust the size as needed */
+  color: #ffffff; /* White color for text */
+  background: repeating-linear-gradient(
+    45deg,
+    #7c6ff3,
+    #7683e1 10%,
+    #6e84de 20%,
+    #829bef 30%,
+    #9cb1f6 40%,
+    #5e4fe4 50%
+  );
+  padding: 10px 20px;
+  border-radius: 10px; /* Add rounded corners */
+  display: inline-block; /* Make the background fit the text */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add a stronger shadow for more depth */
+  border: 2px solid black; /* Add a black border */
+}
+
